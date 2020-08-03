@@ -4,3 +4,8 @@ $(document).ready(function(){
         $(".header").slideDown(7000);
     })
 });
+$(document).ready(function(){
+    $(".btn btn-success").click(function(){
+        $(".container-menu").show();
+    })
+})
