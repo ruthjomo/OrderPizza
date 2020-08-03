@@ -1,11 +1,11 @@
 $(document).ready(function(){
-    $(".header")(function(){
+    $(".header").hover(function(){
         $(".header").slideUp(7000);
         $(".header").slideDown(7000);
     })
 });
 $(document).ready(function(){
-    $(".btn btn-success").click(function(){
+    $(".button").click(function(){
         $(".container-menu").show();
     })
 })
