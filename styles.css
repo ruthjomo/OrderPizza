@@ -46,7 +46,16 @@ h1{
             display:flex;
             flex-direction:row;
         } */
-        .card img{
-            border-radius:2px black;
-
+        .container-menu{
+            background-color:white;
         }
+        .card {
+            border:2px black;
+            
+        }
+        select,label,h2{
+        color:lightseagreen;
+        
+            
+        }
+        
