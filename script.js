@@ -8,4 +8,10 @@ $(document).ready(function(){
     $(".button").click(function(){
         $(".container-menu").show();
     })
+    $(".view-menu").click(function(){
+        $(".container-menu").show();
+    })
+    $(".contact-us").click(function(){
+        $(".footer").show();
+    })
 })
