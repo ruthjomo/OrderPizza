@@ -17,6 +17,13 @@ ul{
     height:100px;
     font-size:50%;
 }
+.cart{
+    margin-left:90%;
+    padding-top:0%;
+    width:25px;
+    height:25px;
+    background-color:transparent;
+}
 .menu ul ,li, a{
     padding:0px 30px;
     display:flex;
