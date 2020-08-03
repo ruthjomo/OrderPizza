@@ -56,7 +56,11 @@ h1{
         select,label,h2{
         color:lightseagreen;
         }
-        .small-sizes h1{
-            padding-top:0%;
+        h2{
+            color:black;
+            padding-top:2%;
+            font-size:60px;
+            margin-left:40%;
+            
         }
         
