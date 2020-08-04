@@ -47,6 +47,12 @@ h1{
      font-size:60px;
      font-style:bold;
 }
+#row1{
+    padding-top:5%;
+}
+#row2{
+    padding-top:5%;
+}
 .button{
          font-style:italic;
         margin-left: 40%;
@@ -54,7 +60,7 @@ h1{
         
         .container-menu{
             background-color:white;
-            display:none;
+            
         }
         .card {
             border:2px black;
@@ -63,16 +69,16 @@ h1{
         select,label,h2{
         color:lightseagreen;
         }
-        h2,h4,h5{
-            color:black;
-            padding-top:2%;
-            font-size:60px;
-            margin-left:40%;
-            
+        .containerdeliver{
+            display:none;
         }
-        h6{
-            font-size:30px;
-        }
+        .deliver{
+            display: none;
+          }
+          form{
+            display: none;
+          }
+       
         .footer{
             margin-top:5%;
             padding-top:5%;

@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <link href="./styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -21,17 +22,8 @@
                         <a href="#container-menu" class="view-menu"><li>VIEW MENU</a></li>
                         <li><a href="#footer" class="contact-us">CONTACT US</a></li>
                         </ul>
-                        <div class="cart-overlay">
-                            <div class="cart">
-                                <span class="close-cart">
-                                    <i class="fas fa-window-close"></i>
-                                </span>
-                                <img src="./images/cart3.png">
-                                <div class="cart-content">
-                                    <div class="cart-item"></div>
-                                </div>
-
-                            </div>
+                        <div class="cart">
+                            <img src="./images/cart3.png">
                         </div>
                 </div>
             </div>
@@ -43,367 +35,134 @@
      <a href="#container-menu"><button class="btn btn-success">VIEW MENU</button></a>
     </div>
 </div>
-
 <div class="container-menu">
-    <h2 class="small-sizes">Small Sizes</h2>
-    <div class="row">
+      <div class="row" id="row1">
         <div class="col-md-3">
             <div class="card">
-            <img src="./images/jonas-kakaroto-zlKdLdMREtE-unsplash.jpg" width="300px" height="150px">
-            <label id="crust">CRUST</label>
-            <select>
-                <option value="Cheese-stuffed" pricevalue="500">Cheese-stuffed  ksh500</option>
-                <option value="Silican-style" pricevalue="800">Silican style ksh800</option>
-                <option value="Crispy" pricevalue="250"> Crispy ksh250</option>
-                <option value="Gluten" pricevalue="600">Gluten ksh600</option>
-                <option value="Flatbread" pricevalue="500"> Flatbread 500</option>
-                <option value="Thin Crust" pricevalue="400">Thin crust ksh 400</option>
-                <option value="Neapolitan" pricevalue="900">Neapolitan ksh900</option>
-            </select>
- <label id="toppings">Toppings</label>
-                <select>
-                    <option value="spices" pricevalue="100">Spices ksh100</option>
-                    <option value="Mushrooms" pricevalue="200">Mushrooms ksh200</option>
-                    <option value="Onions" pricevalue="150"> Onions ksh150</option>
-                    <option value="Sausage" pricevalue="300">Sausage ksh300</option>
-                    <option value="Bacon" pricevalue="500"> Bacon 500</option>
-                    <option value="Extra cheese" pricevalue="400">Extra cheese ksh 400</option>
-                    <option value="Black Olives" pricevalue="250">Blcak Olives ksh250</option>
-                    <option value="Green peppers" pricevalue="150">Green peppers ksh150</option>
-                    <option value="Pineapple" pricevalue="200">Pinapple ksh200</option>
-                </select>
-                <div id="output"> </div>
-                <a href="#cart"><button class="btn-success" id="add-to-cart">ADD TO CART</button></a>
-        </div>
-    </div>
-        <div class="col-md-3">
+                <img src="./images/jonas-kakaroto-zlKdLdMREtE-unsplash.jpg" width="300px" height="150px">
+                </div>
+                </div>
+    <div class="col-md-3">
             <div class="card">
-            <img src="./images/vahid-kanani-lRU57EdCKqE-unsplash.jpg"width=300px" height="150px" >
-            <label for="crust">CRUST</label>
-            <select>
-                <option value="Cheese-stuffed" pricevalue="400">Cheese-stuffed  ksh400</option>
-                <option value="Silican-style" pricevalue="800">Silican style ksh800</option>
-                <option value="crispy" pricevalue="300"> Crispy ksh300</option>
-                <option value="Gluten" pricevalue="600">Gluten ksh600</option>
-                <option value="Flatbread" pricevalue="400"> Flatbread 400</option>
-                <option value="Thin Crust" pricevalue="400">Thin crust ksh 400</option>
-                <option value="Neapolitan" pricevalue="900">Neapolitan ksh900</option>
-            </select>
- <label for="toppings">Toppings</label>
-                <select>
-                    <option value="spices" pricevalue="100">Spices ksh100</option>
-                    <option value="Mushrooms" pricevalue="300">Mushrooms ksh300</option>
-                    <option value="Onions" pricevalue="150"> Onions ksh150</option>
-                    <option value="Sausage" pricevalue="300">Sausage ksh300</option>
-                    <option value="Bacon" pricevalue="500"> Bacon 500</option>
-                    <option value="Extra cheese" pricevalue="400">Extra cheese ksh 400</option>
-                    <option value="Black Olives" pricevalue="150">Blcak Olives ksh150</option>
-                    <option value="Green peppers" pricevalue="150">Green peppers ksh150</option>
-                    <option value="Pineapple" pricevalue="200">Pinapple ksh200</option>
-                </select>
-                <div id="output"> </div>
-                <a href="#cart"><button class="btn-success" id="add-to-cart">ADD TO CART</button></a>
-        </div>
-    </div>
+            <img src="./images/vahid-kanani-lRU57EdCKqE-unsplash.jpg"width="300px" height="150px" >
+            </div>
+            </div>
         <div class="col-md-3">
             <div class="card">
             <img src="./images/eric-x-BC7iloChihs-unsplash.jpg" width="300px" height="150px">
-              <label for="crust">CRUST</label>
-            <select>
-                <option value="Cheese-stuffed" pricevalue="500">Cheese-stuffed  ksh500</option>
-                <option value="Silican-style" pricevalue="800">Silican style ksh800</option>
-                <option value="crispy" pricevalue="250"> Crispy ksh250</option>
-                <option value="Gluten" pricevalue="600">Gluten ksh600</option>
-                <option value="Flatbread" pricevalue="500"> Flatbread 500</option>
-                <option value="Thin Crust" pricevalue="400">Thin crust ksh 400</option>
-                <option value="Neapolitan" pricevalue="900">Neapolitan ksh900</option>
-            </select>
- <label for="toppings">Toppings</label>
-                <select>
-                    <option value="spices" pricevalue="300">Spices ksh300</option>
-                    <option value="Mushrooms" pricevalue="200">Mushrooms ksh200</option>
-                    <option value="Onions" pricevalue="200"> Onions ksh200</option>
-                    <option value="Sausage" pricevalue="300">Sausage ksh300</option>
-                    <option value="Bacon" pricevalue="500"> Bacon 500</option>
-                    <option value="Extra cheese" pricevalue="400">Extra cheese ksh 400</option>
-                    <option value="Black Olives" pricevalue="250">BlaCk Olives ksh250</option>
-                    <option value="Green peppers" pricevalue="400">Green peppers ksh400</option>
-                    <option value="Pineapple" pricevalue="400">Pinapple ksh400</option>
-                </select>
-                <div id="output"> </div>
-                <a href="#cart"><button class="btn-success" id="add-to-cart">ADD TO CART</button></a>
-        </div>
-        </div>
-
-        <div class="col-md-3">
+            </div>
+            </div>
+<div class="col-md-3">
             <div class="card">
             <img src="./images/pizza1.jpeg" width="300px" height="150px">
-            <label for="crust">CRUST</label>
-            <select>
-                <option value="Cheese-stuffed" pricevalue="600">Cheese-stuffed  ksh600</option>
-                <option value="Silican-style" pricevalue="800">Silican style ksh800</option>
-                <option value="Crispy" pricevalue="300"> Crispy ksh300</option>
-                <option value="gluten-free" pricevalue="600">Gluten ksh600</option>
-                <option value="Flatbread" pricevalue="500"> Flatbread ksh500</option>
-                <option value="Thin Crust" pricevalue="400">Thin crust ksh 400</option>
-                <option value="Neapolitan" pricevalue="900">Neapolitan ksh900</option>
-            </select>
- <label for="toppings">Toppings</label>
-                <select>
-                    <option value="spices" pricevalue="300">Spices ksh300</option>
-                    <option value="Mushrooms" pricevalue="400">Mushrooms ksh400</option>
-                    <option value="Onions" pricevalue="150"> Onions ksh300</option>
-                    <option value="Sausage" pricevalue="300">Sausage ksh300</option>
-                    <option value="Bacon" pricevalue="500"> Bacon 500</option>
-                    <option value="Extra cheese" pricevalue="400">Extra cheese ksh 400</option>
-                    <option value="Black Olives" pricevalue="250">Blcak Olives ksh250</option>
-                    <option value="Green peppers" pricevalue="150">Green peppers ksh150</option>
-                    <option value="Pineapple" pricevalue="200">Pinapple ksh200</option>
-                </select>
-                <div id="output"> </div>
-                <a href="#cart"><button class="btn-success" id="add-to-cart">ADD TO CART</button></a>
             </div>
-        </div>
-    </div>
-    <h4>Medium Sizes</h4>
-    <div class="row">
+            </div>
+    
+    <div class="row" id="row2">
         <div class="col-md-3">
             <div class="card">
               <img src="./images/mediumpizza.jpeg" width="300px" height="150px">
-              <label for="crust">CRUST</label>
-            <select>
-                <option value="Cheese-stuffed" pricevalue="500">Cheese-stuffed  ksh500</option>
-                <option value="Silican-style" pricevalue="800">Silican style ksh800</option>
-                <option value="Crispy" pricevalue="250"> Crispy ksh250</option>
-                <option value="Gluten" pricevalue="600">Gluten ksh600</option>
-                <option value="Flatbread" pricevalue="500"> Flatbread 500</option>
-                <option value="Thin Crust" pricevalue="400">Thin crust ksh 400</option>
-                <option value="Neapolitan" pricevalue="900">Neapolitan ksh900</option>
-            </select>
- <label for="toppings">Toppings</label>
-                <select>
-                    <option value="spices" pricevalue="200" required value="">Spices ksh200</option>
-                    <option value="Mushrooms" pricevalue="200"required value="">Mushrooms ksh200</option>
-                    <option value="Onions" pricevalue="250"required value=""> Onions ksh250</option>
-                    <option value="Sausage" pricevalue="300"required value="">Sausage ksh300</option>
-                    <option value="Bacon" pricevalue="500"required value=""> Bacon 500</option>
-                    <option value="Extra cheese" pricevalue="400"required value="">Extra cheese ksh 400</option>
-                    <option value="Black Olives" pricevalue="300"required value="">Blcak Olives ksh300</option>
-                    <option value="Green peppers" pricevalue="150"required value="">Green peppers ksh150</option>
-                    <option value="Pineapple" pricevalue="200"required value="">Pinapple ksh200</option>
-                </select>
-                <div id="output"> </div>
-                <a href="#cart"><button class="btn-success" id="add-to-cart">ADD TO CART</button></a>
-            </div>
-        </div>
+              </div>
+              </div>
         <div class="col-md-3">
             <div class="card">
                 <img src="./images/medim.jpeg" width="300px" height="150px">
-                <label for="crust">CRUST</label>
-            <select>
-                <option value="Cheese-stuffed" pricevalue="500">Cheese-stuffed  ksh500</option>
-                <option value="Silican-style" pricevalue="800">Silican style ksh800</option>
-                <option value="Crispy" pricevalue="350"> Crispy ksh350</option>
-                <option value="Gluten" pricevalue="600">Gluten ksh600</option>
-                <option value="Flatbread" pricevalue="500"> Flatbread 500</option>
-                <option value="Thin crust" pricevalue="450">Thin crust ksh 450</option>
-                <option value="Neapolitan" pricevalue="900">Neapolitan ksh900</option>
-            </select>
- <label for="toppings">Toppings</label>
-                <select>
-                    <option value="spices" pricevalue="200">Spices ksh200</option>
-                    <option value="Mushrooms" pricevalue="200">Mushrooms ksh200</option>
-                    <option value="Onions" pricevalue="200"> Onions ksh200</option>
-                    <option value="Sausage" pricevalue="300">Sausage ksh300</option>
-                    <option value="Bacon" pricevalue="500"> Bacon 500</option>
-                    <option value="Extra cheese" pricevalue="400">Extra cheese ksh 400</option>
-                    <option value="Black Olives" pricevalue="250">Blcak Olives ksh350</option>
-                    <option value="Green peppers" pricevalue="350">Green peppers ksh150</option>
-                    <option value="Pineapple" pricevalue="200">Pinapple ksh200</option>
-                </select>
-                <div id="output"> </div>
-                <a href="#cart"><button class="btn-success" id="add-to-cart">ADD TO CART</button></a>
-            </div>
-        </div>
+               </div>
+               </div>
         <div class="col-md-3">
             <div class="card">
                 <img src="./images/piz.jpeg" width="300px" height="150px">
-                <label for="crust">CRUST</label>
-            <select>
-                <option value="Cheese-stuffed" pricevalue="500">Cheese-stuffed  ksh500</option>
-                <option value="Silican-style" pricevalue="800">Silican style ksh800</option>
-                <option value="Crispy" pricevalue="350"> Crispy ksh350</option>
-                <option value="Gluten" pricevalue="600">Gluten ksh600</option>
-                <option value="Flatbread" pricevalue="500"> Flatbread 500</option>
-                <option value="Thin crust" pricevalue="400">Thin crust ksh 400</option>
-                <option value="Neapolitan" pricevalue="900">Neapolitan ksh900</option>
-            </select>
- <label for="toppings">Toppings</label>
-                <select>
-                    <option value="spices" pricevalue="300">Spices ksh300</option>
-                    <option value="Mushrooms" pricevalue="200">Mushrooms ksh200</option>
-                    <option value="Onions" pricevalue="250"> Onions ksh250</option>
-                    <option value="Sausage" pricevalue="300">Sausage ksh300</option>
-                    <option value="Bacon" pricevalue="500"> Bacon 500</option>
-                    <option value="Extra cheese" pricevalue="400">Extra cheese ksh 400</option>
-                    <option value="Black Olives" pricevalue="250">Blcak Olives ksh250</option>
-                    <option value="Green peppers" pricevalue="150">Green peppers ksh150</option>
-                    <option value="Pineapple" pricevalue="400">Pinapple ksh400</option>
-                </select>
-                <div id="output"> </div>
-                <a href="#cart"><button class="btn-success" id="add-to-cart">ADD TO CART</button></a>
-            </div>
-        </div>
+                </div>
+                </div>
         <div class="col-md-3">
             <div class="card">
                 <img src="./images/pizzas.jpeg" width="300px" height="150px">
-                <label for="crust">CRUST</label>
-            <select>
-                <option value="Cheese-stuffed" pricevalue="500">Cheese-stuffed  ksh500</option>
-                <option value="Silican-style" pricevalue="800">Silican style ksh800</option>
-                <option value="Crispy" pricevalue="450"> Crispy ksh450</option>
-                <option value="Gluten" pricevalue="600">Gluten ksh600</option>
-                <option value="Flatbread" pricevalue="500"> Flatbread 500</option>
-                <option value="Thin crust" pricevalue="400">Thin crust ksh 400</option>
-                <option value="Neapolitan" pricevalue="900">Neapolitan ksh900</option>
-            </select>
- <label for="toppings">Toppings</label>
-                <select>
-                    <option value="spices" pricevalue="400">Spices ksh400</option>
-                    <option value="Mushrooms" pricevalue="200">Mushrooms ksh200</option>
-                    <option value="Onions" pricevalue="150"> Onions ksh150</option>
-                    <option value="Sausage" pricevalue="300">Sausage ksh300</option>
-                    <option value="Bacon" pricevalue="500"> Bacon 500</option>
-                    <option value="Extra cheese" pricevalue="400">Extra cheese ksh 400</option>
-                    <option value="Black Olives" pricevalue="250">Black Olives ksh250</option>
-                    <option value="Green peppers" pricevalue="250">Green peppers ksh250</option>
-                    <option value="Pineapple" pricevalue="200">Pinapple ksh200</option>
-                </select>
-                <div id="output"> </div>
-                <a href="#cart"><button class="btn-success" id="add-to-cart">ADD TO CART</button></a>
-            </div>
+               </div>
+               </div>
+    </div>
+    </div>
+</div>
+        <div class="order">
+            <div class="row">
+                <div class="col-md-3">
+                    <label id="size">size</label><br>
+                <input type="radio" name="size" value="0"> Pizza Pie<br>
+                <input type="radio" name="size" value="1"> small<br>
+                <input type="radio" name="size" value="2"> Medium<br>
+                <input type="radio" name="size" value="3"> Large<br> 
+                </div>
+                <div class="col-md-3">
+            <label id="crust">CRUST</label><br>
+                <input type ="radio" name="crust" value="400">Cheese-stuffed <br> 
+                <input type="radio"  name="crust"value="400">Silican style <br>
+                <input type="radio"   name="crust"value="400" > Crispy <br>
+                <input type="radio"  name="crust"value="400">Gluten <br>
+                <input type="radio" name="crust"value="400"> Flatbread<br>
+                </div>
+                <div class="col-md-3">
+            <label id="toppings">Toppings</label><br>
+                <input type="radio" name="toppings" value="300" >Spices <br>
+                <input type="radio" name="toppings"value="300">Mushrooms <br>
+                <input type="radio"  name="toppings" value="300"> Onions<br>
+                <input type="radio" name="toppings"value="300">Sausage<br>
+                <input  type="radio" name="toppings"value="300"> Bacon<br>
+                </div>
+                <div class="col-md-3">
+     <div class="form-group">
+     <label for="new-first-name"><strong>No. of Pizzas</strong></label>
+    <input class="form-control" type="number" id="number" name="amount" min="1" value="1" placeholder="Enter a number" >
+    </div>
+</div>
+<div class="container submit">
+    <div class="subtotal">
+        <button type="submit" class="btn btn-success" id="submit">Add To Cart</button><br>
+        <div class="subtotal">
+            <p id="subtotal"></p>
         </div>
     </div>
-    <h5>Large sizes</h5>
-    <div class="row">
-        <div class="col-md-3">
-            <div class="card">
-            <img src="./images/large.jpeg" width="300px" height="150px">
-            <label for="crust">CRUST</label>
-            <select>
-                <option value="Cheese-stuffed" pricevalue="500">Cheese-stuffed  ksh500</option>
-                <option value="Silican-style" pricevalue="800">Silican style ksh800</option>
-                <option value="Crispy" pricevalue="350"> Crispy ksh350</option>
-                <option value="Gluten" pricevalue="600">Gluten ksh600</option>
-                <option value="Flatbread" pricevalue="500"> Flatbread 500</option>
-                <option value="Thin Crust" pricevalue="400">Thin crust ksh 400</option>
-                <option value="Neapolitan" pricevalue="900">Neapolitan ksh900</option>
-            </select>
- <label for="toppings">Toppings</label>
-                <select>
-                    <option value="spices" pricevalue="300">Spices ksh300</option>
-                    <option value="Mushrooms" pricevalue="200">Mushrooms ksh200</option>
-                    <option value="Onions" pricevalue="150"> Onions ksh150</option>
-                    <option value="Sausage" pricevalue="300">Sausage ksh300</option>
-                    <option value="Bacon" pricevalue="500"> Bacon 500</option>
-                    <option value="Extra cheese" pricevalue="400">Extra cheese ksh 400</option>
-                    <option value="Black Olives" pricevalue="250">Blcak Olives ksh250</option>
-                    <option value="Green peppers" pricevalue="250">Green peppers ksh250</option>
-                    <option value="Pineapple" pricevalue="200">Pinapple ksh200</option>
-                </select>
-                <div id="output"> </div>
-                <a href="#cart"><button class="btn-success"  id="add-to-cart">ADD TO CART</button></a>
-            </div>
-            </div>
-        <div class="col-md-3">
-            <div class="card">
-            <img src="./images/large2.jpeg" width="300px" height="150px">
-            <label for="crust">CRUST</label>
-            <select>
-                <option value="Cheese-stuffed" pricevalue="500">Cheese-stuffed  ksh500</option>
-                <option value="Silican-style" pricevalue="800">Silican style ksh800</option>
-                <option value="Crispy" pricevalue="450"> Crispy ksh450</option>
-                <option value="Gluten" pricevalue="600">Gluten ksh600</option>
-                <option value="Flatbread" pricevalue="500"> Flatbread 500</option>
-                <option value="Thin Crust" pricevalue="400">Thin crust ksh 400</option>
-                <option value="Neapolitan" pricevalue="900">Neapolitan ksh900</option>
-            </select>
- <label for="toppings">Toppings</label>
-                <select>
-                    <option value="spices" pricevalue="300">Spices ksh300</option>
-                    <option value="Mushrooms" pricevalue="250">Mushrooms ksh250</option>
-                    <option value="Onions" pricevalue="150"> Onions ksh150</option>
-                    <option value="Sausage" pricevalue="300">Sausage ksh300</option>
-                    <option value="Bacon" pricevalue="500"> Bacon 500</option>
-                    <option value="Extra cheese" pricevalue="400">Extra cheese ksh 400</option>
-                    <option value="Black Olives" pricevalue="250">Blcak Olives ksh250</option>
-                    <option value="Green peppers" pricevalue="250">Green peppers ksh250</option>
-                    <option value="Pineapple" pricevalue="200">Pinapple ksh200</option>
-                </select>
-                <div id="output"> </div>
-                <a href="#cart"><button class="btn-success"  id="add-to-cart">ADD TO CART</button></a>
-</div>
-            </div>
-        <div class="col-md-3">
-            <div class="card">
-            <img src="./images/large3.jpeg" width="300px" height="150px">
-            <label for="crust">CRUST</label>
-            <select>
-                <option value="Cheese-stuffed" pricevalue="600">Cheese-stuffed  ksh600</option>
-                <option value="Silican-style" pricevalue="800">Silican style ksh800</option>
-                <option value="Crispy" pricevalue="350"> Crispy ksh350</option>
-                <option value="Gluten" pricevalue="600">Gluten ksh600</option>
-                <option value="Flatbread" pricevalue="500"> Flatbread 500</option>
-                <option value="Thin Crust" pricevalue="400">Thin crust ksh 400</option>
-                <option value="Neapolitan" pricevalue="900">Neapolitan ksh900</option>
-            </select>
- <label for="toppings">Toppings</label>
-                <select>
-                    <option value="spices" pricevalue="200">Spices ksh200</option>
-                    <option value="Mushrooms" pricevalue="200">Mushrooms ksh200</option>
-                    <option value="Onions" pricevalue="200"> Onions ksh200</option>
-                    <option value="Sausage" pricevalue="300">Sausage ksh300</option>
-                    <option value="Bacon" pricevalue="500"> Bacon 500</option>
-                    <option value="Extra cheese" pricevalue="400">Extra cheese ksh 400</option>
-                    <option value="Black Olives" pricevalue="250">Blcak Olives ksh250</option>
-                    <option value="Green peppers" pricevalue="150">Green peppers ksh150</option>
-                    <option value="Pineapple" pricevalue="200">Pinapple ksh200</option>
-                </select>
-                <div id="output"> </div>
-                <a href="#cart"><button class="btn-success"  id="add-to-cart">ADD TO CART</button></a>
+</div><br>
+            
         </div>
-            </div>
-        <div class="col-md-3">
-            <div class="card">
-            <img src="./images/large4.jpeg" width="300px" height="150px">
-            <label for="crust">CRUST</label>
-            <select>
-                <option value="Cheese-stuffed" pricevalue="500">Cheese-stuffed  ksh500</option>
-                <option value="Silican-style" pricevalue="800">Silican style ksh800</option>
-                <option value="Crispy" pricevalue="250"> Crispy ksh250</option>
-                <option value="Gluten" pricevalue="600">Gluten ksh600</option>
-                <option value="Flatbread" pricevalue="500"> Flatbread 500</option>
-                <option value="Thin crust" pricevalue="400">Thin crust ksh 400</option>
-                <option value="Neapolitan" pricevalue="900">Neapolitan ksh900</option>
-            </select>
- <label for="toppings">Toppings</label>
-                <select>
-                    <option value="spices" pricevalue="400">Spices ksh400</option>
-                    <option value="Mushrooms" pricevalue="200">Mushrooms ksh200</option>
-                    <option value="Onions" pricevalue="150"> Onions ksh150</option>
-                    <option value="Sausage" pricevalue="300">Sausage ksh300</option>
-                    <option value="Bacon" pricevalue="500"> Bacon 500</option>
-                    <option value="Extra cheese" pricevalue="400">Extra cheese ksh 400</option>
-                    <option value="Black Olives" pricevalue="250">Blcak Olives ksh250</option>
-                    <option value="Green peppers" pricevalue="350">Green peppers ksh350</option>
-                    <option value="Pineapple" pricevalue="200">Pinapple ksh200</option>
-                </select>
-                <div id="output"> </div>
-                <a href="#cart"><button class="btn-success" id="add-to-cart">ADD TO CART</button></a>
         </div>
+    
+    <div class="containerdeliver">
+        <p>Do you want your order to be delivered?<br> click the <strong>Delivery</strong>  button and if not,click Checkout</p>
+        <button type="button" class="btn btn-success" id="delivery">Delivery</button>
+        <button type="submit" class="btn btn-success" id="checkout">Checkout</button>
+    </div><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form class="deliver">
+                    <div class="form-group">
+                        <label for="name">Enter your Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-first-name">Enter your Contact:</label>
+                        <input type="Number" class="form-control" id="contact" placeholder="contact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Enter your Location:</label>
+                        <select class="form-control" id="location">
+                            <option class="form-control" value="0">Caren</option>
+                            <option class="form-control" value="1">Ngong</option>
+                            <option class="form-control" value="2">Kiambu Road</option>
+                            <option class="form-control" value="3">Ngong Road</option>
+                            <option class="form-control" value="4">Westlands</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Street">Enter your Street/Hse No:</label>
+                        <input type="text" class="form-control" id="street" placeholder="HSE No / Street Name" required>
+                    </div>
+                    <button type="button" class="btn btn-success" id="confirm">Confirm</button>
+                    <div>
+                        <p id="Output"></p>
+            
+        
+            
 
-    </div>
-</div>
 <div class="footer bg-info">
     <div class="row">
         <div class="col-md-4">
@@ -444,57 +203,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div class="container-menu">
-<div class="row">
-    <div class="col-md-2">
-        <div class="card" >
-            <img src="./images/jonas-kakaroto-zlKdLdMREtE-unsplash.jpg" width="50px" height="50px">
-            <!-- <input type="text" placeholder="fill your crust">
-            <label>Price  ksh800</label>
-              <select>
-                <option value="gluten-free" placeholder="choose crust"></option>
-                <option value="crispy" placeholder="choose crust"></option>
-                <option value="stuffed" placeholder="choose crust"></option>
-              </select>
-              <select>
-                <option value="spicy" placeholder="choose crust"></option>
-                <option value="Mushrooms" placeholder="choose crust"></option>
-                <option value="Onions" placeholder="choose crust"></option>
-                <option value="Sausage" placeholder="choose crust"></option>
-                <option value="Bacon" placeholder="choose crust"></option>
-                <option value="Extra cheese" placeholder="choose crust"></option>
-                <option value="Blcak Olives" placeholder="choose crust">Audi</option>
-                <option value="Green peppers" placeholder="choose crust">Audi</option>
-                <option value="Pineapple" placeholder="choose crust">Audi</option>
-                  -->
-
-<!-- </div>
-</div>
-<div class="col-md-2">
-
-</div>
-    </div>
-</div>
-</div> -->
-
-
- -->
 
 
 
