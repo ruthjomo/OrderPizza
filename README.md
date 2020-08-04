@@ -29,4 +29,4 @@ This is a web application for ordering pizza online.When a user orders,it gives 
 
 License
 MIT License
-copyright:Ruth Jomo
+copyright:RuthJomo
