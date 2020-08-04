@@ -43,9 +43,9 @@ h1{
     padding-top:20%; 
     padding-bottom:0%;
     position:center;
-     color:black;
-     font-size:60px;
-     font-style:bold;
+    color:black;
+    font-size:60px;
+    font-style:bold;
 }
 #row1{
     padding-top:5%;
@@ -54,33 +54,32 @@ h1{
     padding-top:5%;
 }
 .button{
-         font-style:italic;
-        margin-left: 40%;
-        }
-        
-        .container-menu{
-            background-color:white;
-            
-        }
-        .card {
-            border:2px black;
-            
-        }
-        select,label,h2{
-        color:lightseagreen;
-        }
-        .containerdeliver{
-            display:none;
-        }
-        .deliver{
-            display: none;
-          }
-          form{
-            display: none;
-          }
-       
-        .footer{
-            margin-top:5%;
-            padding-top:5%;
-        }
+    font-style:italic;
+    margin-left: 40%;
+}
+.container-menu{
+    background-color:white;
+    display:none;
+}
+.card {
+    border:2px black;
+}
+select,label,h2{
+    color:lightseagreen;
+}
+.containerdeliver{
+    display:none;
+}
+.deliver{
+    display: none;
+}
+form{
+    display: none;
+}
+.container-footer{
+    width:100%;
+    margin-top:5%;
+    padding-top:5%;
+    
+}
         
