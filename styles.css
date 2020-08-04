@@ -1,10 +1,8 @@
 body{
     padding:0;
     margin:0;
+    size:cover;
 }
-
-
-
 ul{
     list-style: none;
 }
@@ -13,35 +11,76 @@ ul{
     height:10%;
     background-color:black;
     box-shadow:2px 2px 2px;
+    position:fixed;
 }
-
 .logo img{
-    width:80px;
-    height:80px;
-    font-size:20%;
+    width:100px;
+    height:70px;
+    font-size:50%;
+}
+.cart{
+    margin-left:90%;
+    padding-top:0%;
+    width:25px;
+    height:25px;
+    
 }
 .menu ul ,li, a{
     padding:0px 30px;
     display:flex;
     color:lightseagreen;
+    
 }
 .header{
     background-image:url("./images/h1\ image.jpeg");
     background-size: cover;
-    /* background-attachment:fixed; */
+     background-attachment:fixed; 
     width:100%;
     height:50%;
 }
 h1{
     margin-left:40%;
-    padding-top:30%; 
+    padding-top:20%; 
     padding-bottom:0%;
     position:center;
      color:black;
      font-size:60px;
      font-style:bold;
 }
+#row1{
+    padding-top:5%;
+}
+#row2{
+    padding-top:5%;
+}
 .button{
          font-style:italic;
         margin-left: 40%;
         }
+        
+        .container-menu{
+            background-color:white;
+            
+        }
+        .card {
+            border:2px black;
+            
+        }
+        select,label,h2{
+        color:lightseagreen;
+        }
+        .containerdeliver{
+            display:none;
+        }
+        .deliver{
+            display: none;
+          }
+          form{
+            display: none;
+          }
+       
+        .footer{
+            margin-top:5%;
+            padding-top:5%;
+        }
+        

@@ -8,20 +8,23 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <link href="./styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="navigation-container">
+    <div class="navigation-container" width="100%" >
         <div class="navigation-content">
-            <div class="logo">
+            <div class="logo" >
                 <img src="./images/IMG_20200731_203802.jpg">
                 <div class="menu">
                     <ul>
                         <li><a href="#">HOME</a></li>
-                        <li><a href="#">PLACE ORDER</a></li>
-                        <li><a href="#">CONTACT US</a></li>
-                        <li><a href="#"><img src="./images/cart3.png"></li>
-                    </ul>
+                        <a href="#container-menu" class="view-menu"><li>VIEW MENU</a></li>
+                        <li><a href="#footer" class="contact-us">CONTACT US</a></li>
+                        </ul>
+                        <div class="cart">
+                            <img src="./images/cart3.png">
+                        </div>
                 </div>
             </div>
         </div>
@@ -29,30 +32,178 @@
     <div class="header">
     <h1>TASTY FEELING!<br>Click below</h1>
     <div class="button">
-        <button class="btn btn-success">ORDER NOW</button>
+     <a href="#container-menu"><button class="btn btn-success">VIEW MENU</button></a>
     </div>
 </div>
-<div class="row">
-    <div class="column">
-        <div class="card">
-            <img src="./images/jonas-kakaroto-zlKdLdMREtE-unsplash.jpg">
-            <select>
-                <option value="cicle" placeholder="choose a size">Circle</option>
-                <option value="square" placeholder="choose a size">Square</option>
-                <option value="Triangle" placeholder="choose a size">Opel</option>
-                <option value="Rectangle" placeholder="choose a size">Audi</option>
-              </select>
-              <label>Price  ksh800</label>
-              <select>
-                <option value="gluten">Circle</option>
-                <option value="square">Square</option>
-                <option value="Triangle">Opel</option>
-                <option value="Rectangle">Audi</option>
-              </select>
+<div class="container-menu">
+      <div class="row" id="row1">
+        <div class="col-md-3">
+            <div class="card">
+                <img src="./images/jonas-kakaroto-zlKdLdMREtE-unsplash.jpg" width="300px" height="150px">
+                </div>
+                </div>
+    <div class="col-md-3">
+            <div class="card">
+            <img src="./images/vahid-kanani-lRU57EdCKqE-unsplash.jpg"width="300px" height="150px" >
+            </div>
+            </div>
+        <div class="col-md-3">
+            <div class="card">
+            <img src="./images/eric-x-BC7iloChihs-unsplash.jpg" width="300px" height="150px">
+            </div>
+            </div>
+<div class="col-md-3">
+            <div class="card">
+            <img src="./images/pizza1.jpeg" width="300px" height="150px">
+            </div>
+            </div>
+    
+    <div class="row" id="row2">
+        <div class="col-md-3">
+            <div class="card">
+              <img src="./images/mediumpizza.jpeg" width="300px" height="150px">
+              </div>
+              </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="./images/medim.jpeg" width="300px" height="150px">
+               </div>
+               </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="./images/piz.jpeg" width="300px" height="150px">
+                </div>
+                </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="./images/pizzas.jpeg" width="300px" height="150px">
+               </div>
+               </div>
+    </div>
+    </div>
+</div>
+        <div class="order">
+            <div class="row">
+                <div class="col-md-3">
+                    <label id="size">size</label><br>
+                <input type="radio" name="size" value="0"> Pizza Pie<br>
+                <input type="radio" name="size" value="1"> small<br>
+                <input type="radio" name="size" value="2"> Medium<br>
+                <input type="radio" name="size" value="3"> Large<br> 
+                </div>
+                <div class="col-md-3">
+            <label id="crust">CRUST</label><br>
+                <input type ="radio" name="crust" value="400">Cheese-stuffed <br> 
+                <input type="radio"  name="crust"value="500">Silican style <br>
+                <input type="radio"   name="crust"value="400" > Crispy <br>
+                <input type="radio"  name="crust"value="400">Gluten <br>
+                <input type="radio" name="crust"value="400"> Flatbread<br>
+                </div>
+                <div class="col-md-3">
+            <label id="toppings">Toppings</label><br>
+                <input type="checkbox" name="toppings" value="300" >Spices <br>
+                <span class="checkmark"></span>
+                <input type="checkbox" name="toppings"value="200">Mushrooms <br>
+                <span class="checkmark"></span>
+                <input type="checkbox"  name="toppings" value="300"> Onions<br>
+                <span class="checkmark"></span>
+                <input type="checkbox" name="toppings"value="300">Sausage<br>
+                <span class="checkmark"></span>
+                <input  type="checkbox" name="toppings"value="300"> Bacon<br>
+                </div>
+                <div class="col-md-3">
+     <div class="form-group">
+     <label for="new-first-name"><strong>No. of Pizzas</strong></label>
+    <input class="form-control" type="number" id="number" name="amount" min="1" value="1" placeholder="Enter a number" >
+    </div>
+</div>
+<div class="container submit">
+    <div class="subtotal">
+        <button type="submit" class="btn btn-success" id="submit">Add To Cart</button><br>
+        <div class="subtotal">
+            <p id="subtotal"></p>
+        </div>
+    </div>
+</div><br>
+            
+        </div>
+        </div>
+    
+    <div class="container deliver">
+        <p>Do you want your order to be delivered?<br> click the <strong>Delivery</strong>  button and if not,click Checkout</p>
+        <button type="button" class="btn btn-success" id="delivery">Delivery</button>
+        <button type="submit" class="btn btn-success" id="checkout">Checkout</button>
+    </div><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form class="deliver">
+                    <div class="form-group">
+                        <label for="name">Enter your Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-first-name">Enter your Contact:</label>
+                        <input type="Number" class="form-control" id="contact" placeholder="contact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Enter your Location:</label>
+                        <select class="form-control" id="location">
+                            <option class="form-control" value="0">Caren</option>
+                            <option class="form-control" value="1">Ngong</option>
+                            <option class="form-control" value="2">Kiambu Road</option>
+                            <option class="form-control" value="3">Ngong Road</option>
+                            <option class="form-control" value="4">Westlands</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Street">Enter your Street/Hse No:</label>
+                        <input type="text" class="form-control" id="street" placeholder="HSE No / Street Name" required>
+                    </div>
+                    <button type="button" class="btn btn-success" id="confirm">Confirm</button>
+                    <div>
+                        <p id="Output"></p>
+            
+        
+            
 
+<div class="footer bg-info">
+    <div class="row">
+        <div class="col-md-4">
+            <h6>Call Us</h6>
+            <img src="./images/emailicon.png" width="50px" height="50px">:queenpizza@gmail.com.<br>
+            <br><img src="./images/callicon.png" width="50px" height="50px">:+254 790 449 481.
+        </div>
+        <div class="col-md-4">
+            <h6>Visit Us</h6>
+            <p>Nairobi CBD</p>
+            <p>Anniversary Towers Street</p>
+            <p>Building opposite Kemu Towers</p>
+            <p>5th floor</p>
+            
+        </div>
+        <div class="col-md-4">
+            <h6>Find us on social media</h6>
+            <img src="./images/fb.png" width="50px" height="50px">
+            <img src="./images/ig.png" width="50px" height="50px">
+            <img src="./images/twitter.png" width="50px" height="50px">
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
