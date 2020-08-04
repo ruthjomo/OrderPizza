@@ -7,6 +7,7 @@ Visit the site.
 view the different types of pizzas, crusts and toppings.
 Make an order.
 ##Live Demo
+https://ruthjomo.github.io/OrderPizza/
 
 ##Set up Instructions
 Access through cloning the repository
